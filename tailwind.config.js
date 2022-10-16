@@ -4,7 +4,17 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    backgroundImage:{
+      'Computer': "url('../src/images/Screen.png')",
+    },
+    objectImage:{
+      
+    },
+    extend: {
+      colors: {
+        'navy-blue': '#003366',
+      }
+    },
   },
   plugins: [],
 }
