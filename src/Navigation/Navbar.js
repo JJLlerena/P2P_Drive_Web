@@ -2,9 +2,9 @@ import { Disclosure} from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-  { name: 'About', href: '/#', current: true },
+  { name: 'Home', href: '/#', current: true },
   { name: 'Features', href: '/#', current: false },
-  { name: 'Team', href: '/#', current: false },
+  { name: 'About', href: '/#', current: false },
 ]
 
 function classNames(...classes) {
@@ -63,7 +63,7 @@ export default function Header() {
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
               <button type='button' class='break-inside bg-[#eeeeee] rounded-xl p-3 mb-0 w-full'>
                 <div class='flex items-center space-x-4'>
-                    <span class='text-base font-medium text-black'>Register</span>
+                    <span class='text-base font-medium text-black'>Login</span>
                 </div>
                 </button>                
               </div>
