@@ -1,3 +1,12 @@
-import Navbar from '../Navigation/Navbar.js';
-import Screen from '../images/Screen.png';
 
+
+
+function About() {
+    return(
+    <dive className="About Us">
+        
+    </dive>
+    )
+}
+
+export default About;
