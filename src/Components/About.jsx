@@ -1,3 +1,10 @@
-import Navbar from '../Navigation/Navbar.js';
-import Screen from '../images/Screen.png';
 
+function About () {
+    return(
+        <div className="About">
+            <h1>hello</h1>
+        </div>
+    )
+}
+
+export default About;

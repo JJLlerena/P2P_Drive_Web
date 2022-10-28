@@ -4,7 +4,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 const navigation = [
   { name: 'Home', href: '/#', current: true },
   { name: 'Features', href: '/#', current: false },
-  { name: 'About', href: '/#', current: false },
+  { name: 'About', href: '/about', current: false },
 ]
 
 function classNames(...classes) {
@@ -16,7 +16,7 @@ export default function Header() {
     <Disclosure as="nav" className="bg-navy-blue h-24">
       {({ open }) => (
         <>
-          <div className="h-24 mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div className="h-24 mx-auto max-w-7xl px-2 sm:px-6 lg :px-8">
             <div className="relative flex h-24 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
