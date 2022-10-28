@@ -23,7 +23,7 @@ function Home(){
                 
                 
         </div>
-        <img class="Object-fill h-fill w-fill pt-20 pl-40" src={Screen}/>
+        <img class="Object-fill h-fill w-fill ml-10 pt-20 pl-40" src={Screen} />
       </div>      
     </div>
     
