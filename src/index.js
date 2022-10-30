@@ -6,6 +6,7 @@ import Layout from './Components/Layout';
 import Home from './Components/Home';
 import Register from './Components/Register';
 import About from './Components/About';
+import UI from './Components/UI';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -17,6 +18,7 @@ root.render(
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="register" element={<Register />} />
+          <Route path="user" element={<UI />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
