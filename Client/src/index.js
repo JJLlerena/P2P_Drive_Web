@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './Components/Layout';
 import Home from './Components/Home';
 import Register from './Components/Register';
+import Login from './Components/Login';
 import About from './Components/About';
 import UI from './Components/UI';
 
@@ -17,6 +18,7 @@ root.render(
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
+          <Route path="login" element={<Login />} />
           <Route path="register" element={<Register />} />
           <Route path="user" element={<UI />} />
           <Route path="*" element={<NoPage />} />
