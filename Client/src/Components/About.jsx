@@ -13,6 +13,10 @@ function About() {
                 <span>
                     Johnny Llerena
                 </span>
+                <br/>
+                <span>
+                    Front End Developer
+                </span>
             </div>
             <div>
                 <UserCircleIcon className="h-10 w-10"/>
