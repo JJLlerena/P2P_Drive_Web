@@ -21,7 +21,11 @@ function About() {
             <div>
                 <UserCircleIcon className="h-10 w-10"/>
                 <span>
-                   Gerardo Leon 
+                    Gerardo Leon
+                </span>
+                <br/>
+                <span>
+                    Front End Developer
                 </span>
             </div>
             <div>
@@ -29,11 +33,19 @@ function About() {
                 <span>
                     Michael Garrido
                 </span>
+                <br/>
+                <span>
+                    Back End Developer
+                </span>
             </div>
             <div>
                 <UserCircleIcon className="h-10 w-10"/>
                 <span>
                     Martin Moreano
+                </span>
+                <br/>
+                <span>
+                    Back End Developer
                 </span>
             </div>
             <div>
@@ -41,11 +53,19 @@ function About() {
                 <span>
                     Keiss De Los Santos
                 </span>
+                <br/>
+                <span>
+                    Back End Developer
+                </span>
             </div>
             <div>
                 <UserCircleIcon className="h-10 w-10"/>
                 <span>
                     Shawn Zukowski
+                </span>
+                <br/>
+                <span>
+                    Back End Developer
                 </span>
             </div>
             <div>
@@ -53,11 +73,19 @@ function About() {
                 <span>
                     Jorge Cortes
                 </span>
+                <br/>
+                <span>
+                    Front End Developer
+                </span>
             </div>
             <div>
                 <UserCircleIcon className="h-10 w-10"/>
                 <span>
-                    Hello
+                    Dominick Diaz
+                </span>
+                <br/>
+                <span>
+                    Back End Developer
                 </span>
             </div>
              
