@@ -1,5 +1,7 @@
 import Screen from '../images/Screen.png';
+
 import Navbar from '../Navigation/Navbar'
+
 
 
 

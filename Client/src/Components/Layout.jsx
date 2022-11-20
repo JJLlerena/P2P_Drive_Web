@@ -4,11 +4,12 @@ import Navbar from '../Navigation/Navbar';
 
 
 
+
 const Layout = () => {
   return (
     <>
       <Navbar />
-      <main>{this.props.children}</main>
+      <Outlet />
     </>
   )
 };

@@ -1,4 +1,3 @@
-    
 function About() {
     return(
     <div className="About">
@@ -7,9 +6,15 @@ function About() {
           P2P Drive is a the perfect opportunity to enhance our skills and enhance our development. 
           This project focuses on creating a decentralized file sharing system, 
           storing fragments of your personalized files accross multiple nodes.</h2>
+
         
     </div>
     
+
+          <p>test</p>
+        
+    </div>
+
     )
 }
 
