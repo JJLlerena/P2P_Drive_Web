@@ -1,13 +1,15 @@
 import Screen from '../images/Screen.png';
+import Navbar from '../Navigation/Navbar'
 
 
 
 function Home(){
   return ( 
+    <
     <div className='Home'>
         <div class="flex h-auto w-auto justify-center mt-20 md:mt-32  ">
           <div className=" flex-col  md:mr-40 md:w-80">
-            <h1 class='text-5xl md:text-6xl font-bold text-center md:text-left  '> Decentralized access to your content</h1>
+            <h1 class='text-3xl md:text-5xl lg:text-6xl font-bold text-center md:text-left  '> Decentralized access to your content</h1>
             <h2 class='py-3 text-base text-center  md:text-left md:font-semibold  md:text-xl    '>Save and upload your files using blockchain technology</h2>       
             {/*Register & Login Buttons*/}
             <div classname="reg-log-button" class='flex mb-10 md:mt-5  justify-center md:justify-start'>

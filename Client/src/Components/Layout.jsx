@@ -8,7 +8,7 @@ const Layout = () => {
   return (
     <>
       <Navbar />
-      <Outlet />
+      <main>{this.props.children}</main>
     </>
   )
 };
