@@ -4,10 +4,12 @@ import './index.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './Components/Layout';
 import Home from './Components/Home';
+
 import Info from './Components/Info';
 import About from './Components/About';
 import Register from './Components/Register';
 import Login from './Components/Login';
+
 import UI from './Components/UI';
 
 

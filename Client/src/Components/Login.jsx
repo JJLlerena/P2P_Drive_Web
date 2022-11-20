@@ -14,6 +14,7 @@ function Login() {
               </div>
               <div className="password" class="grid grid-cols-1 pb-2 px-10">
                   <label className="form__label" for="password">Password: </label>
+
                   <input className="form__input" type="password"  id="password" placeholder="Password"/>
               </div>
               <div class="footer w-fit mx-auto">
