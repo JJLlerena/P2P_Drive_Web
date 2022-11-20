@@ -1,3 +1,4 @@
+
 import {UserCircleIcon} from "@heroicons/react/24/outline";
 import Patrick from "../images/Patrick.webp";
 import Penguin from "../images/Johnnypfp.webp";
@@ -88,9 +89,6 @@ function About() {
             </div>
              
           </div>
-        
-    </div>
-    )
-}
+
 
 export default About
