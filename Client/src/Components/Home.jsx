@@ -1,26 +1,41 @@
+
+import Screen from '../images/Screen.png';
+
+import Navbar from '../Navigation/Navbar'
+
+
 function Home(){
-  return (
-    // neeed to make css file for page defaults.
-    // additional pages can be modified using tailwind 
-    // sm md lg at least
-         
-      <div class="flex h-auto w-auto  mt-28 justify-center  ">
-        <div>
-          <h1 class='text-2xl text-bold font-bold text-left  '> Decentralized access to your content</h1>
-          <h2 class='pt-2 pb-5 text-left text-s'>Save and upload your files using blockchain technology</h2>       
-          <a href="/#"
-            class="bg-navy-blue rounded-sm py-2 px-8">
-            <span class=' text-lg text-yellow-400'>Login</span>
-          </a>
-          <a href="/register"
-            class='bg-navy-blue rounded-sm  py-2 px-6 ml-5  '>
-            <span class=' text-lg text-yellow-400'>Register</span>
-          </a>
+  return ( 
+    <
+    <div className='Home'>
+        <div class="flex h-auto w-auto justify-center mt-20 md:mt-32  ">
+          <div className=" flex-col  md:mr-40 md:w-80">
+            <h1 class='text-3xl md:text-5xl lg:text-6xl font-bold text-center md:text-left  '> Decentralized access to your content</h1>
+            <h2 class='py-3 text-base text-center  md:text-left md:font-semibold  md:text-xl    '>Save and upload your files using blockchain technology</h2>       
+            {/*Register & Login Buttons*/}
+            <div classname="reg-log-button" class='flex mb-10 md:mt-5  justify-center md:justify-start'>
+              <a href="/login"
+                class="bg-navy-blue rounded-sm py-2 px-10">
+                <span class=' text-lg text-yellow-400'>Login</span>
+              </a>
+              <a href="/register"
+                class='bg-navy-blue rounded-sm  py-2 px-10 ml-5  '>
+                <span class=' text-lg text-yellow-400'>Register</span>
+              </a>
+            </div>
+            {/*Mobile image*/}
+            <img class=" Object-fill px-3 md:hidden "src={Screen} alt="background" />
+          </div>
+          <div> 
+            {/*Desktop image*/}
+            <img class=" Object-fill hidden md:block"src={Screen} alt="background" /> 
+          </div>
+          
         </div>
-        <div> 
-          <img class=" Object-fill  "src={Screen} alt="background" />
-        </div>
-        
+      </div>
+    
+  );
+};
 
 
 export default Home;

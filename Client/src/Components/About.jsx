@@ -1,4 +1,3 @@
-
 import {UserCircleIcon} from "@heroicons/react/24/outline";
 import Patrick from "../images/Patrick.webp";
 import Penguin from "../images/Johnnypfp.webp";
@@ -7,6 +6,7 @@ import Michael from "../images/Michaelpfp.png";
 import Squidward from "../images/Shawnpfp.webp";
 import Jorge from "../images/Jorgepfp.webp";
 import DOM from "../images/Dominickpfp.webp";
+
 function About() {
     return(
     <div className="About">
@@ -86,9 +86,7 @@ function About() {
                 <span>
                     Back End Developer
                 </span>
-            </div>
-             
+            </div>             
           </div>
-
 
 export default About
