@@ -1,8 +1,7 @@
+
 import Screen from '../images/Screen.png';
 
 import Navbar from '../Navigation/Navbar'
-
-
 
 
 function Home(){
@@ -37,5 +36,6 @@ function Home(){
     
   );
 };
+
 
 export default Home;
