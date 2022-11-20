@@ -1,30 +1,81 @@
 
+import Axios from 'axios';
+import { useState } from 'react';
 
+asd
 
+function Register()  {
+  const url='/userRegisters';
+  
+  const [data, setData] = useState({
+    firstname: "",
+    lastname: "",
+    username: "",
+    email: "",
+    number: "",
+    password: ""
+  })
+    
 
+   function submit(e){
+    e.preventDefault();
+    Axios.post(url,null, { params: {
+      firstname: data.firstname,
+      lastname: data.lastname,
+      username: data.username,
+      email: data.email,
+      number: data.number,
+      password: data.password
+    }})
+      .then(res=>{
+        console.log(res.data);
+      })
+  }
 
-function Register() {
+  function handle(e){
+    const newdata={ ...data }
+    newdata[e.target.id] = e.target.value
+    setData(newdata)
+    
+    console.log(newdata)
+    console.log(data)
+
+  }
     return(
-        <div className="form w-auto h-auto">
-          <div className="box-border bg-gray-300 h-fit my-10 mx-auto max-w-2xl px-2 sm:pt-6 sm:px-6 lg:px-8 text-2xl border-4">
-              <div className="username pb-2">
-                  <label className="form__label" for="firstName">First Name </label>
-                  <input className="form__input" type="text" id="firstName" placeholder="First Name"/>
-              </div>
-              <div className="lastname pb-2">
-                  <label className="form__label" for="lastName">Last Name </label>
-                  <input  type="text" name="" id="lastName"  className="form__input"placeholder="LastName"/>
-              </div>
-              <div className="password pb-2">
-                  <label className="form__label" for="password">Password </label>
-                  <input className="form__input" type="password"  id="password" placeholder="Password"/>
-              </div>
-              <div class="footer w-fit mx-auto">
-                <button type='button' class='bg-[#003366] rounded-lg  py-2 px-12 '>
-                <span class=' text-lg text-yellow-400'>Login</span>
+        <div >
+          <form onSubmit={(e)=> submit(e)} class=" bg-slate-200 rounded-md border-4 mt-10 p-4 h-fit w-fit mx-auto" >
+                <div className="grid grid-cols-1 pb-2 px-10">
+                  <label for="FirstName">FirstName: </label>
+                  <input onChange={(e)=>handle(e)} value={data.firstname} type="text"  id="firstname"  placeholder="FirstName"/>
+                </div>
+                <div className="grid grid-cols-1 pb-2 px-10">
+                  <label for="LastName">LastName: </label>
+                  <input onChange={(e)=>handle(e)} value={data.lastname} type="text"  id="lastname" placeholder="LastName"/>
+                </div>
+                <div className="grid grid-cols-1 pb-2 px-10">
+                  <label for="UserName">Username: </label>
+                  <input onChange={(e)=>handle(e)} value={data.username} type="text" id="username" placeholder="Username"/>
+                </div>
+                <div className="grid grid-cols-1 pb-2 px-10">
+                  <label for="Email">Email: </label>
+                  <input onChange={(e)=>handle(e)} value={data.email} type="email"  id="email" placeholder="Email"/>
+                </div>
+                <div className="grid grid-cols-1 pb-2 px-10">
+                  <label for="Phone_Number">PhoneNumber: </label>
+                  <input onChange={(e)=>handle(e)} value={data.number} type="number"  id="number" placeholder="3057778888" 
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
+                </div>
+                <div className="grid grid-cols-1 pb-2 px-10">
+                  <label for="Password">Password: </label>
+                  <input onChange={(e)=>handle(e)} value={data.password} type="password"  id="password" placeholder="password"/>
+                </div>
+              <div className="footer w-fit mx-auto">
+                <button type='Submit' class='bg-[#003366] rounded-lg  py-2 px-12 '>
+                <span class=' text-lg text-yellow-400'>Submit</span>
                 </button>
-            </div>
-          </div>
+              </div>
+          </form>
+
           
       </div>      
     );
