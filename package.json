@@ -1,7 +1,6 @@
 {
   "name": "p2p-project",
   "version": "0.1.0",
-  "proxy": "http://localhost:8083",
   "private": true,
   "dependencies": {
     "@headlessui/react": "^1.7.3",
@@ -11,6 +10,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.1.3",
     "bootstrap": "^5.2.2",
+    "context": "^4.0.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
     "react-dom": "^18.2.0",
