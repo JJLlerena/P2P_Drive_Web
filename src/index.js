@@ -3,16 +3,17 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './Components/Layout';
+<<<<<<< HEAD
 import LaunchPage from './Components/Launchpage';
 import Upload from './Components/Dummyup';
+=======
+import Home from './Components/Home';
+import Upload from './Components/Info';
+>>>>>>> 107d09a11a3d4f5354e99b20d3dbad6b6b0d893b
 import About from './Components/About';
 import Register from './Components/Register';
 import Login from './Components/Login';
 import Dashboard from './Components/Dashboard';
-import Home from './Dashboard/Home';
-import Files from './Dashboard/Files';
-import Explore from './Dashboard/Explore';
-import Settings from './Dashboard/Settings';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -20,19 +21,17 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
+<<<<<<< HEAD
           <Route index element={<LaunchPage />} />
           <Route path="Dummyup" element={<Upload />} />
+=======
+          <Route index element={<Home />} />
+          <Route path="upload" element={<Upload />} />
+>>>>>>> 107d09a11a3d4f5354e99b20d3dbad6b6b0d893b
           <Route path="about" element={<About />} />
           <Route path="login" element={<Login />} />
           <Route path="register" element={<Register />} />
-          <Route path="dashboard" element={<Dashboard />} >
-              <Route index element={<Home />} />
-              <Route path="Home" element={<Home />} />
-              <Route path="files" element={<Files />} />
-              <Route path="explore" element={<Explore />} />
-              <Route path="settings" element={<Settings />} />
-              <Route path="*" element={<NoPage />} />
-          </Route>
+          <Route path="Dashboards" element={<Dashboard />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
