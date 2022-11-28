@@ -4,7 +4,7 @@ import './index.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './Components/Layout';
 import Home from './Components/Home';
-import Info from './Components/Info';
+import Upload from './Components/Info';
 import About from './Components/About';
 import Register from './Components/Register';
 import Login from './Components/Login';
@@ -18,7 +18,7 @@ root.render(
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="info" element={<Info />} />
+          <Route path="upload" element={<Upload />} />
           <Route path="about" element={<About />} />
           <Route path="login" element={<Login />} />
           <Route path="register" element={<Register />} />

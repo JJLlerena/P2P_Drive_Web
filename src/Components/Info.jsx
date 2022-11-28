@@ -1,11 +1,38 @@
+import React, {useState} from 'react';
+import axios from 'axios';
 
-function Info () {
-    return(
-        <div className="Info">
-            
-            <h1>This is info</h1>
-        </div>
-    )
+export default function Upload() {
+
+  const [file, setFile] = useState()
+
+  function handleChange(event) {
+    setFile(event.target.files[0])
+  }
+  
+  function handleSubmit(event) {
+    event.preventDefault()
+    const url = '/fileadd';
+    const formData = new FormData();
+    formData.append('file', file);
+    formData.append('fileName', file.name);
+    const config = {
+      headers: {
+        'content-type': 'multipart/form-data',
+      },
+    };
+    axios.post(url, formData, config).then((response) => {
+      console.log(response.data);
+    });
+
+  }
+
+  return (
+    <div className="App">
+        <form onSubmit={handleSubmit}>
+          <h1>React File Upload</h1>
+          <input type="file" onChange={handleChange}/>
+          <button type="submit">Upload</button>
+        </form>
+    </div>
+  );
 }
-
-export default Info;
