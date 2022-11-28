@@ -1,10 +1,12 @@
+import {folder} from '@heroicons/react/24/outline'
+import { Routes, Route, Link, Outlet } from 'react-router-dom';
 
-function Dashboard () {
+
+export default function Dashboard () {
     return(
-        <div className="Dashboard">
-            <h1>This is ui</h1>
-        </div>
+       <>
+          <Outlet />
+        </>  
     )
 }
 
-export default Dashboard;
