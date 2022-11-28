@@ -4,7 +4,7 @@ import './index.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './Components/Layout';
 import LaunchPage from './Components/Launchpage';
-import Info from './Components/Info';
+import Upload from './Components/Dummyup';
 import About from './Components/About';
 import Register from './Components/Register';
 import Login from './Components/Login';
@@ -14,7 +14,6 @@ import Files from './Dashboard/Files';
 import Explore from './Dashboard/Explore';
 import Settings from './Dashboard/Settings';
 
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -22,7 +21,7 @@ root.render(
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<LaunchPage />} />
-          <Route path="info" element={<Info />} />
+          <Route path="Dummyup" element={<Upload />} />
           <Route path="about" element={<About />} />
           <Route path="login" element={<Login />} />
           <Route path="register" element={<Register />} />
