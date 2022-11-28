@@ -6,7 +6,7 @@ import { Outlet } from "react-router-dom";
 
 
 
-function Layout () {
+export default function Launch () {
   return (
     <>
       {/*<Navbar />*/}
@@ -15,4 +15,3 @@ function Layout () {
   )
 }
 
-export default Layout

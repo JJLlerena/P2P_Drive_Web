@@ -4,7 +4,7 @@ import Screen from '../images/Screen.png';
 import Navbar from '../Navigation/Navbar'
 
 
-export default function LaunchPage(){
+export default function HomePage(){
   return ( 
   <>
     <Navbar/>
