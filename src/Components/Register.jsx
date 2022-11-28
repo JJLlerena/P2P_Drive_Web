@@ -20,14 +20,14 @@ function Register()  {
 
    function submit(e){
     e.preventDefault();
-    Axios.post(url,null, { params: {
+    Axios.post(url, {
       firstname: data.firstname,
       lastname: data.lastname,
       username: data.username,
       email: data.email,
       number: data.number,
       password: data.password
-    }})
+    })
       .then(res=>{
         console.log(res.data);
       })
